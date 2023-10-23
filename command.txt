@@ -1,0 +1,4 @@
+php artisan vendor:publish --provider="Webpress\Core\Providers\WebpressCoreProvider" --tag=lang
+UPDATE lighthouse
+SET controller = 'App\\Http\\Controllers\\ProductDetailController'
+WHERE controller = 'Webpress\\Product\\Http\\Controllers\\Web\\ProductDetailController'
